@@ -4,7 +4,10 @@
 и возвращающую цену гравировки всех слов в строке.*/
 
 const calculateEngravingPrice = function (message, pricePerWord) {
-  // твой код
+  const wordsArray = message.split(" ");
+  //   console.log(wordsArray);
+
+  return wordsArray.length * pricePerWord;
 };
 
 /*
