@@ -3,7 +3,9 @@
 если запрещенных слов нет функция возвращает false.Слова в строке могут быть в произвольном регистре.*/
 
 const checkForSpam = function (message) {
-  // твой код
+  let lowerMessage = message.toLowerCase();
+
+  return lowerMessage.includes("spam") || lowerMessage.includes("sale");
 };
 
 /*
