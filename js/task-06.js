@@ -13,8 +13,17 @@ const numbers = [];
 let total = 0;
 
 do {
-  input = prompt("Введите число:");
-  numbers.push(Number(input));
+  input = prompt("Введите число");
+
+  if (input !== null) {
+    input = Number(input);
+
+    if (Number.isNaN(+input)) {
+      alert("Было введено не число, попробуйте еще раз");
+      continue;
+    }
+    numbers.push(Number(input));
+  }
 } while (input !== null);
 
 if (numbers.length > 0) {
@@ -23,4 +32,4 @@ if (numbers.length > 0) {
   }
 }
 
-console.log(`Общая сумма чисел равна ${total}`);
+alert(`Общая сумма чисел равна ${total}`);

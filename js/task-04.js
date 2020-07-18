@@ -4,14 +4,7 @@
 добавляет в конец строки троеточие '...', после чего возвращает укороченную версию.*/
 
 const formatString = function (string) {
-  let symbol = string.split(" ");
-  //   console.log(symbol);
-
-  if (symbol.length <= 40) {
-    return string;
-  }
-
-  return `${string.slice(0, 40)} ...`;
+  return string.length <= 40 ? string : `${string.slice(0, 40)} ...`;
 };
 
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));

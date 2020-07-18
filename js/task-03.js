@@ -5,12 +5,10 @@
 
 const findLongestWord = function (string) {
   const wordsArray = string.split(" ");
-  //   console.log(wordsArray[0].length);
 
   let wordLength = wordsArray[0];
 
   for (let i = 1; i < wordsArray.length; i += 1) {
-    //   console.log(i);
     if (wordLength.length < wordsArray[i].length) {
       wordLength = wordsArray[i];
     }

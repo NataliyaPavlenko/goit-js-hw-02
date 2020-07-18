@@ -5,24 +5,10 @@
 
 const logItems = function (array) {
   for (let i = 0; i < array.length; i += 1) {
-    const result = `${i + 1} - ${array[i]}`;
-    console.log(result);
+    console.log(`${i + 1} - ${array[i]}`);
   }
 };
 
 logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
 
 logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
-
-// const array = ["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"];
-// console.log(array[1]);
-// console.log(array[3]);
-
-// // const result = array[2] + " " + array[4];
-// // const result = `${array[2]} ${array[4]}`;
-
-// for (let i = 0; i < array.length; i += 1) {
-//   console.log(array[i]);
-// }
-
-// console.log(result);
