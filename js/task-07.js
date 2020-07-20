@@ -24,8 +24,7 @@
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const isLoginValid = function (login) {
-  let loginLength = login.length;
-  return loginLength >= 4 && loginLength <= 16;
+  return login.length >= 4 && login.length <= 16;
 };
 
 const isLoginUnique = function (allLogins, login) {
